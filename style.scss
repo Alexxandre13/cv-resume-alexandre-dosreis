@@ -1,0 +1,226 @@
+/********************** RESET **********************/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-smooth: auto;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+/********************** Default **********************/
+
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.cv-wrapper {
+    margin: 20mm 0;
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+}
+
+/********************** EXPORT TO PDF **********************/
+
+@media print {
+    html {
+        display: block;
+        width: 210mm;
+        height: 297mm;
+        overflow: hidden;
+    }
+
+    .cv-wrapper {
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }
+}
+
+/********************** GLOBAL **********************/
+
+:root {
+    --dark: #19293b;
+    --light: rgb(253, 250, 238);
+    --link: rgb(228, 184, 89);
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(./font/Comfortaa/Comfortaa-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(./font/Roboto/Roboto-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Light-Italic";
+    src: url(./font/Roboto/Roboto-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./font/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(./font/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Comfortaa";
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-thickness: 1.2px;
+}
+
+h3 {
+    letter-spacing: 0px;
+    text-align: right;
+    font-size: smaller;
+}
+
+.left-side,
+.right-side {
+    padding: 10mm 5mm;
+}
+
+.box {
+    font-family: "Roboto-Thin";
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--link);
+    font-weight: bolder;
+
+}
+
+ul, li {
+    list-style-position: inside;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+/********************** LEFT-SIDE **********************/
+
+.left-side {
+    position: absolute;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+#identity {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+/********************** RIGHT-SIDE **********************/
+
+.right-side {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.right-side {
+
+    a {
+        color: var(--dark);
+    }
+
+    h2 {
+        font-weight: bolder;
+        text-decoration-thickness: 1.3px;
+    }
+
+    .box {
+        font-family: "Roboto-Regular";
+        color: var(--dark);
+        line-height: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .sub-box {
+        margin-bottom: 1rem;
+    }
+
+    .box-title {
+        font-family: "Roboto-Bold";
+    }
+
+    .box-subtitle {
+        font-family: "Roboto-Light-Italic";
+    }
+
+    .box-desc {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex {
+        .flex-item {
+            width: 50%;
+        }
+    }
+}
