@@ -4,7 +4,7 @@ This is my CV / resume done with HTML and CSS in a A4 format page :
 - width: 210mm
 - height: 297mm
 
-I was tired of Microsoft Word ugly layout so I made this.
+I was tired of the MS Word ugly layout so I made this.
 
 The CSS file has a rule to automatically adjust the format when you try to print the document as a pdf.
 

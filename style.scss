@@ -119,7 +119,7 @@ h3 {
 
 .left-side,
 .right-side {
-    padding: 7mm 5mm;
+    padding: 7mm 4mm;
 }
 
 .box {
@@ -128,7 +128,7 @@ h3 {
     letter-spacing: 2px;
     text-align: justify;
     line-height: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 a {
@@ -167,6 +167,11 @@ ul, li {
     border-radius: 200px;
 }
 
+.social {
+    text-align: left;
+    list-style-position: outside;
+}
+
 /********************** RIGHT-SIDE **********************/
 
 .right-side {
@@ -182,6 +187,8 @@ ul, li {
 
     a {
         color: var(--dark);
+        text-decoration: underline 1px;
+        text-underline-offset: 2px;
     }
 
     h2 {
@@ -193,7 +200,7 @@ ul, li {
         font-family: "Roboto-Regular";
         color: var(--dark);
         line-height: 1.1rem;
-        margin-bottom: 1.7rem;
+        margin-bottom: 1.2rem;
     }
 
     .sub-box {
@@ -221,6 +228,7 @@ ul, li {
     .flex {
         .flex-item {
             width: 50%;
+            padding-right: 10px;
         }
     }
 }
